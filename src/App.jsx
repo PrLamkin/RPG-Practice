@@ -1,5 +1,10 @@
 import React from "react";
+import Sprite from "./components/sprite"
 
 export default function App() {
-  return <div className="zone-container">Start here</div>
+  return (
+  <div className="zone-container">
+    <Sprite />
+  </div>
+  );
 }
