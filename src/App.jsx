@@ -1,17 +1,14 @@
 import React from "react";
-import Sprite from "./components/sprite"
+import Actor from "./components/actor"
 
 export default function App() {
+  const data = {
+    h:32,
+    w:32,
+  };
   return (
   <div className="zone-container">
-    <Sprite image={"/sprites/skins/m1.png"}
-      data={{
-        x: 0,
-        y: 0,
-        w: 32,
-        h: 32,
-      }}
-    />
+    <Actor sprite={`/sprite/skins/m1.png`} data={data}/>
   </div>
   );
 }
